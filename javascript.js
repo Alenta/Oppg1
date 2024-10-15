@@ -83,13 +83,18 @@ as well as a few of the shorthand operators (++, --, +=, -=)
 
 console.log("Oppgave 3");
 let age2 = 25;
-let ageCombined = age+age2;
-ageCombined -= age;
-ageCombined /= 10;
-ageCombined *= age;
 console.log(age2);
+
+let ageCombined = age+age2;
 console.log(ageCombined);
+
+ageCombined -= age;
 console.log(ageCombined);
+
+ageCombined /= 10;
+console.log(ageCombined);
+
+ageCombined *= age;
 console.log(ageCombined);
 //your code here
 
@@ -130,7 +135,7 @@ can handle all cases correctly
 ******************************************************************************/
 
 
-let userName = "";
+let userName = "Name";
 
 
 let userAge = 18;
@@ -143,8 +148,11 @@ let userIsBlocked = false;
 
 
 let goToPage = "";
+console.log(userName);
+console.log(userAge);
+console.log(userIsBlocked);
 
-if(!userName==="" && userAge >= 18 && !userIsBlocked){
+if(userName!=="" && userAge >= 18 && !userIsBlocked){
     userIsLoggedIn = true;
     goToPage = "/home"
 }
@@ -180,8 +188,6 @@ to see that your conditional is working.
 const userMale = false;
 const variable = userMale ? "Mr." : "Mrs.";
 console.log(variable);
-userMale = true;
-variable = userMale ? "Mr." : "Mrs.";
-console.log(variable);
+
 
 
